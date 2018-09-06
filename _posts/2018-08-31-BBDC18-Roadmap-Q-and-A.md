@@ -1,7 +1,7 @@
 ---
 layout: post_with_category
 title: BBDC18 Roadmap Q&A
-date:  2018-08-30 10:30 AM -0600
+date:  2018-09-15 10:30 AM -0600
 categories: latest general
 permalink: /blog/:title
 badge: blog
