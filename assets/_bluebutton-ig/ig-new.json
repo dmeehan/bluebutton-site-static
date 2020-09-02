@@ -1,0 +1,144 @@
+{
+  "source": "ig", 
+  "canonicalBase": "http://fhir.org/guides/argonaut-pd",
+  "version" : "3.0.2",
+  "license" : "GPL-3.0-only",
+  "html-template" : "none",
+  "suppressedWarningFile": "none",
+  "suppress-qa" : false,
+  "paths" : { 
+    "resources": [
+      "resources"
+    ],
+    "pages": "pages",
+    "temp": "temp",
+    "output": "output",
+    "qa": "qa", 
+    "txCache" : "txCache", 
+    "specification" : "http://hl7.org/fhir" 
+  },
+  "npm-name" : "hl7.fhir.core",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "extensions": [
+  ],
+  "no-inactive-codes" : false,  
+  "broken-links" : "warning", 
+  "check-aggregation" : true, 
+  "check-mustSupport" : true, 
+  "append-slash-to-dependency-urls" : false, 
+  "anyExtensionsAllowed" : false, 
+  "hintAboutNonMustSupport" : true,
+  "gen-examples" : true, 
+  "do-transforms" : false, 
+  "extension-domains" : [ 
+  ],
+  "extraTemplates": [
+    "mappings"
+  ],
+  "defaults": {
+    "Any": {
+      "template-base": "base.html",
+      "template-format": "format.html"
+    },
+    "Bundle": {
+      "template-base": "ex.html"
+    },
+    "CodeSystem": {
+      "template-base": "codesys.html"
+    },
+    "ExplanationOfBenefit": {
+      "template-base": "ex.html"
+    },
+    "StructureDefinition": {
+      "template-base": "sd.html",
+      "template-defns": "sd-definitions.html",
+      "template-mappings": "sd-mappings.html"
+    },
+    "StructureMap": {
+      "content": false,
+      "profiles": false,
+      "script": false,
+      "template-base": "ex.html"
+    },
+    "ValueSet": {
+      "template-base": "vs.html"
+    }
+  },
+  "resources": {
+      "ExplanationOfBenefit/part-d-event-example": {
+        "base": "part-d-event-example.html",
+        "source": "part-d-event-example.xml"
+      },  	
+      "StructureDefinition/bluebutton-profile-patient-claim.html": {
+        "base": "StructureDefinition-bluebutton-patient-claim.html",
+        "defns": "StructureDefinition-bluebutton-patient-claim.html",
+        "source": "bluebutton-profile-patient-claim.xml"
+      },
+      "StructureDefinition/bluebutton-profile-pde-claim.html": {
+        "base": "StructureDefinition-bluebutton-pde-claim.html",
+        "defns": "StructureDefinition-bluebutton-pde-claim-definitions.html",
+        "source": "bluebutton-profile-pde-claim.xml"
+      },
+      "StructureDefinition/bluebutton-profile-carrier-claim.html": {
+        "base": "StructureDefinition-bluebutton-carrier-claim.html",
+        "defns": "StructureDefinition-bluebutton-carrier-claim-definitions.html",
+        "source": "bluebutton-profile-carrier-claim.xml"
+      },
+      "StructureDefinition/bluebutton-profile-coverage.html": {
+        "base": "StructureDefinition-bluebutton-coverage.html",
+        "defns": "StructureDefinition-bluebutton-coverage-definitions.html",
+        "source": "bluebutton-profile-coverage.xml"
+      },
+    "StructureDefinition/bluebutton-profile-inpatient-claim.html": {
+        "base": "StructureDefinition-bluebutton-inpatient-claim.html",
+        "defns": "StructureDefinition-bluebutton-inpatient-claim-definitions.html",
+        "source": "bluebutton-profile-inpatient-claim.xml"
+      },
+    "StructureDefinition/bluebutton-profile-outpatient-claim.html": {
+        "base": "StructureDefinition-bluebutton-outpatient-claim.html",
+        "defns": "StructureDefinition-bluebutton-outpatient-claim-definitions.html",
+        "source": "bluebutton-profile-outpatient-claim.xml"
+      },
+    "StructureDefinition/bluebutton-profile-snf-claim.html": {
+        "base": "StructureDefinition-bluebutton-snf-claim.html",
+        "defns": "StructureDefinition-bluebutton-snf-claim-definitions.html",
+        "source": "bluebutton-profile-snf-claim.xml"
+      },
+    "StructureDefinition/bluebutton-profile-dme-claim.html": {
+        "base": "StructureDefinition-bluebutton-dme-claim.html",
+        "defns": "StructureDefinition-bluebutton-dme-claim-definitions.html",
+        "source": "bluebutton-profile-dme-claim.xml"
+      },
+    "StructureDefinition/bluebutton-profile-hha-claim.html": {
+        "base": "StructureDefinition-bluebutton-hha-claim.html",
+        "defns": "StructureDefinition-bluebutton-hha-claim-definitions.html",
+        "source": "bluebutton-profile-hha-claim.xml"
+      },
+    "StructureDefinition/bluebutton-profile-hospice-claim.html": {
+        "base": "StructureDefinition-bluebutton-hospice-claim.html",
+        "defns": "StructureDefinition-bluebutton-hospice-claim-definitions.html",
+        "source": "bluebutton-profile-hospice-claim.xml"
+      }
+  },
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "searches": [
+  ], 
+  "status": "draft",
+  "structuremaps": [
+  ],
+  "title": "Blue Button 2.0 IG",
+  "valuesets": [
+  ],
+  "working-dir": "C/bit9prog/dev/gitrepo/bluebutton-ig/",
+  "special-urls": [
+    "urn:oid:2.16.840.1.113883.6.238"
+  ],
+  "swagger" : [
+  ],
+  "tool" : "jekyll" 
+}
