@@ -35,7 +35,8 @@
   "dependencyList": [
     {
       "location": "http://www.fhir.org/guides/argonaut/pd/release1/",
-      "name": "argopd"
+      "name": "argopd",
+      "version": "1.0.0"
     }
   ],
   "do-transforms": "false",
@@ -134,6 +135,6 @@
   "tool": "jekyll",
   "valuesets": [
   ],
-  "version": "3.0.1",
+  "version": "3.0.2",
   "working-dir": "C/bit9prog/dev/gitrepo/bluebutton-ig/"
 }

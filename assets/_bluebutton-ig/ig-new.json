@@ -1,6 +1,6 @@
 {
-  "source": "ig", 
-  "canonicalBase": "http://fhir.org/guides/argonaut-pd",
+  "source": "ig.xml", 
+  "canonicalBase": "http://hl7.org/fhir",
   "version" : "3.0.2",
   "license" : "GPL-3.0-only",
   "html-template" : "none",
@@ -8,24 +8,18 @@
   "suppress-qa" : false,
   "paths" : { 
     "resources": [
-      "resources"
+      "resources",
+      "examples"
     ],
-    "pages": "pages",
+    "pages": ["pages"],
     "temp": "temp",
     "output": "output",
     "qa": "qa", 
     "txCache" : "txCache", 
-    "specification" : "http://hl7.org/fhir" 
+    "specification" : "https://hl7.org/fhir/STU3/"
   },
+  "jurisdiction": "US",
   "npm-name" : "hl7.fhir.core",
-  "jurisdiction" : [{
-    "coding" : [{
-      "system" : "urn:iso:std:iso:3166",
-      "code" : "US"
-    }]
-  }],
-  "extensions": [
-  ],
   "no-inactive-codes" : false,  
   "broken-links" : "warning", 
   "check-aggregation" : true, 
@@ -37,9 +31,7 @@
   "do-transforms" : false, 
   "extension-domains" : [ 
   ],
-  "extraTemplates": [
-    "mappings"
-  ],
+  "extraTemplates": ["mappings"],
   "defaults": {
     "Any": {
       "template-base": "base.html",
@@ -69,11 +61,11 @@
       "template-base": "vs.html"
     }
   },
-  "resources": {
-      "ExplanationOfBenefit/part-d-event-example": {
-        "base": "part-d-event-example.html",
-        "source": "part-d-event-example.xml"
-      },  	
+  "resources": { 	
+    "ExplanationOfBenefit/part-d-event-example": {
+      "base": "part-d-event-example.html",
+      "source": "part-d-event-example.xml"
+    },  	
       "StructureDefinition/bluebutton-profile-patient-claim.html": {
         "base": "StructureDefinition-bluebutton-patient-claim.html",
         "defns": "StructureDefinition-bluebutton-patient-claim.html",
@@ -126,15 +118,8 @@
       }
   },
   "sct-edition": "http://snomed.info/sct/731000124108",
-  "searches": [
-  ], 
   "status": "draft",
-  "structuremaps": [
-  ],
   "title": "Blue Button 2.0 IG",
-  "valuesets": [
-  ],
-  "working-dir": "C/bit9prog/dev/gitrepo/bluebutton-ig/",
   "special-urls": [
     "urn:oid:2.16.840.1.113883.6.238"
   ],

@@ -1,0 +1,1797 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "ig",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/cbrune/workspaces/bluebutton-site-static/assets/_bluebutton-ig/resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/cbrune/workspaces/bluebutton-site-static/assets/_bluebutton-ig/examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/cbrune/workspaces/bluebutton-site-static/assets/_bluebutton-ig/pages"
+  }],
+  "url" : "http://hl7.org/fhir/ImplementationGuide/ig",
+  "name" : "Blue Button 2.0",
+  "status" : "draft",
+  "experimental" : true,
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "packageId" : "hl7.fhir.core",
+  "license" : "GPL-3.0-only",
+  "fhirVersion" : ["3.0.2"],
+  "definition" : {
+    "grouping" : [{
+      "id" : "p1",
+      "name" : "base"
+    }],
+    "resource" : [{
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-pde-claim.html"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-carrier-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-coverage"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-inpatient-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-outpatient-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-snf-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-patient-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-dme-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-hha-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-profile-hospice-claim"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-pde-benefit-package-id-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-pde-days-supply-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-pde-fill-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-pde-plan-cntrct-rec-id-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-pde-phrmcy-srvc-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-patient-race-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-asgmntcd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-clm-clncl-tril-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-clm-cash-ddctbl-apld-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-clm-pmt-dnl-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-nch-carr-clm-alowd-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-nch-carr-clm-sbmtd-chrg-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-nch-clm-bene-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-nch-clm-prvdr-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-line-prvdr-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-prtcptng-ind-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-us-npi-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-line-mtus-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-line-mtus-cnt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-betos-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-line-bene-prmry-pyr-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-line-service-deductible-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-line-hct-hgb-rslt-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-ndc-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-line-ansthsa-unit-cnt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-prvdr-state-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-prvdr-zip-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-line-prcng-lclty-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-carr-line-clia-lab-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-carrier-line-pmt-80-100-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-ime-op-clm-val-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-dsh-op-clm-val-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pass-thru-per-diem-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-profnl-cmpnt-chrg-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-tot-pps-cptl-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-bene-ip-ddctbl-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-bene-pta-coinsrnc-lblty-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-ip-ncvrd-chrg-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-ip-tot-ddctn-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pps-cptl-dsprprtnt-shr-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pps-cptl-excptn-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pps-cptl-fsp-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pps-cptl-ime-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pps-cptl-outlier-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-pps-old-cptl-hld-hrmls-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-drg-outlier-aprvd-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-nch-bene-blood-ddctbl-lblty-am-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-mdcr-non-pmt-rsn-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-fi-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-claim-query-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-fac-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-clm-poa-ind-sw1-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-rev-cntr-ndc-qty-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-inpatient-rev-cntr-ddctbl-coinsrnc-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-nch-profnl-cmpnt-chrg-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-nch-bene-ptb-ddctbl-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-nch-bene-ptb-coinsrnc-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-clm-op-prvdr-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-clm-op-bene-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-nch-bene-blood-ddctbl-lblty-am-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-clm-mdcr-non-pmt-rsn-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-fi-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-claim-query-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-clm-fac-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-rev-cntr-ndc-qty-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-rev-cntr-stus-ind-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-outpatient-rev-cntr-ide-ndc-upc-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-nch-bene-ip-ddctbl-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-nch-bene-pta-coinsrnc-lblty-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-nch-ip-ncvrd-chrg-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-nch-ip-tot-ddctn-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-pps-cptl-dsprprtnt-shr-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-pps-cptl-excptn-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-pps-cptl-fsp-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-pps-cptl-ime-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-pps-cptl-outlier-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-pps-old-cptl-hld-hrmls-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-nch-bene-blood-ddctbl-lblty-am-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-mdcr-non-pmt-rsn-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-fi-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-claim-query-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-clm-fac-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-snf-rev-cntr-ddctbl-coinsrnc-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/race"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/gndr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/adjudications"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/plan-cntrct-rec-id"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/information-categories"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-mdcr-non-pmt-rsn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/claim-query-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-fac-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/rev-cntr-stus-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-poa-ind-sw1"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/rev-cntr-ddctbl-coinsrnc-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/carr-num"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/carr-clm-pmt-dnl-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/asgmntcd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/carr-line-prvdr-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/prtcptng-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/carr-line-mtus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/betos-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/line-bene-prmry-pyr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/line-service-deductible"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/prvdr-state-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/carr-line-prcng-lclty-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/line-pmt-80-100-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/dmerc-line-prcng-state-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/dmerc-line-supplr-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/phrmcy-srvc-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/adjstmt-dltn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/daw-prod-slctn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/dspnsng-stus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/drug-cvrg-stus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/nstd-frmt-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/prcng-excptn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ctstrphc-cvrg-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/rx-orgn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/brnd-gnrc-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ptnt-rsdnc-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/submsn-clr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/rev-cntr-ndc-qty-qlfr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/nch-ptnt-stus-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-ip-admsn-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-src-ip-admsn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-mco-pd-sw"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-freq-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ptnt-dschrg-stus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/nch-prmry-pyr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/nch-prmry-pyr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-hha-lupa-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/clm-hha-rfrl-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ms-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/orec"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/crec"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/esrd-ind"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/a-trm-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/b-trm-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/b-trm-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/a-trm-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/esrd-ind"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/crec"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/orec"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/ms-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/adjudications"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-hha-rfrl-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-hha-lupa-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/ptnt-dschrg-stus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-freq-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-mco-pd-sw"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-src-ip-admsn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-ip-admsn-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/nch-ptnt-stus-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/rev-cntr-ndc-qty-qlfr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/submsn-clr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/ptnt-rsdnc-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/brnd-gnrc-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/rx-orgn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/ctstrphc-cvrg-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/prcng-excptn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/nstd-frmt-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/drug-cvrg-stus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/dspnsng-stus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/daw-prod-slctn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/adjstmt-dltn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/phrmcy-srvc-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/dmerc-line-supplr-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/dmerc-line-prcng-state-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/line-pmt-80-100-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/carr-line-prcng-lclty-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/prvdr-state-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/line-service-deductible"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/line-bene-prmry-pyr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/betos-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/carr-line-mtus-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/prtcptng-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/carr-line-prvdr-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/asgmntcd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/carr-clm-pmt-dnl-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/carr-num"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/rev-cntr-ddctbl-coinsrnc-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-poa-ind-sw1"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/rev-cntr-stus-ind-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-fac-type-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/claim-query-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/clm-mdcr-non-pmt-rsn-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/information-categories"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/plan-cntrct-rec-id"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/race"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/gndr-cd"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "ExplanationOfBenefit/part-d-event-example"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-carr-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-carr-clm-pmt-dnl-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-asgmntcd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-clm-clncl-tril-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-carr-clm-cash-ddctbl-apld-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-nch-clm-prvdr-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-nch-clm-bene-pmt-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-nch-carr-clm-sbmtd-chrg-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-nch-carr-clm-alowd-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-prtcptng-ind-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-suplrnum-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-dmerc-line-scrn-svgs-amt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-dmerc-line-mtus-cnt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-betos-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-line-bene-prmry-pyr-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-line-service-deductible-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-line-hct-hgb-rslt-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-ndc-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-prvdr-state-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-dmerc-line-prcng-state-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-dmerc-line-supplr-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-dme-line-pmt-80-100-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-clm-mdcr-non-pmt-rsn-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-fi-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-clm-fac-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-bene-hospc-prd-cnt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-rev-cntr-ndc-qty-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hospice-rev-cntr-ddctbl-coinsrnc-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-clm-mdcr-non-pmt-rsn-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-prpayamt-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-fi-num-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-clm-fac-type-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-rev-cntr-stus-ind-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-rev-cntr-ndc-qty-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-hha-rev-cntr-ddctbl-coinsrnc-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-coverage-ms-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-coverage-orec-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-coverage-crec-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-coverage-esrd-ind-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-coverage-a-trm-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/bluebutton-coverage-b-trm-cd-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    }],
+    "page" : {
+      "nameUrl" : "index.html",
+      "title" : "Blue Button Homepage",
+      "generation" : "html",
+      "page" : [{
+        "nameUrl" : "_includes/toc.md",
+        "title" : "Blue Button Table of Contents",
+        "generation" : "html"
+      }]
+    },
+    "parameter" : [{
+      "code" : "html-template",
+      "value" : "none"
+    },
+    {
+      "code" : "apply",
+      "value" : "jurisdiction"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    }]
+  }
+}
